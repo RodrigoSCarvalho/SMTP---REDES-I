@@ -88,7 +88,7 @@ while fecha == False:
     # Mostra a mensagem e temos a opção de enviar QUIT para encerrar a conexão
     quitando = input(encerraMensagem+'\n\r')
     clientSocket.send(quitando.encode())  # Enviamos a mensagem
-    if quitando == 'QUIT':  # Se decidimos por encerrar
+    if quitando == 'QUIT':  # Se decidirmos por encerrar
         # Receberemos uma mensagem de despedida
         despedida = clientSocket.recv(1024).decode()
         print(despedida)
