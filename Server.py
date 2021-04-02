@@ -17,9 +17,9 @@ def TrataHelo(connectionSocket):  # Verifica se tem erros na declaração do HEL
     while 1:
         # Recebe helo do socket client
         helo = connectionSocket.recv(1024).decode()
-        helo = helo.split(' ')  # Divide pelo espaço
+        helo = helo.rsplit(' ')  # Divide pelo espaço
         if len(helo) == 2:  # O helo tem que ter 2 posições helo + domínio
-            if helo[0] == 'HELO' and helo[1] != ' ':
+            if helo[0] == 'HELO' and helo[1] != "":
                 global dominioRemetente
                 # Guarda a informação de domínio do remetente
                 dominioRemetente = helo[1]
@@ -87,6 +87,10 @@ def TrataReceptor(connectionSocket):  # Tratar erros e confirmar o receptor "RCP
                 else:  # Erro no destinatário informado
                     print(ERRO_DE_ENDERECO)
                     connectionSocket.send(ERRO_DE_ENDERECO.encode())
+            else:  # Erro em algum comando
+                print(ERRO_DE_SINTAXE)
+                connectionSocket.send(ERRO_DE_SINTAXE.encode())
+
 
         else:  # Erro em algum comando
             print(ERRO_DE_SINTAXE)
