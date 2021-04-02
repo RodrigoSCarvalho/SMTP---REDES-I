@@ -97,7 +97,7 @@ def TrataMensagem(connectionSocket):  # Trata a mensagem e a data
     while 1:
         data = connectionSocket.recv(1024).decode()
         if data == "DATA" or data == "data":  # Verifica se foi passado corretamente o comando DATA
-            podeEnviar = "354 Start mail input; End with '.'"
+            podeEnviar = "354 Start mail input; End with '.'. on a line by itself"
             # Envia mensagem de confirmação
             connectionSocket.send(podeEnviar.encode())
             # Sem erro no comando, sai do while e passa para a próxima etapa.
@@ -113,7 +113,7 @@ def TrataMensagem(connectionSocket):  # Trata a mensagem e a data
             mensagem = connectionSocket.recv(
                 1024).decode()  # Recebe a mensagem
             # Se receber o . encerraremos a mensagem
-            if mensagem[0] == '.' and len(mensagem):
+            if mensagem[0] == '.' and len(mensagem) == 1:
                 print("Encerrando a mensagem \r\n")
                 mail.write('\r\n')
                 break  # Fecha a mensagem
