@@ -1,5 +1,5 @@
 # SMTP - REDES I
-## UNIVERSIDADE FEDERAL FLUMINENSE
+### UNIVERSIDADE FEDERAL FLUMINENSE
 
 ### INSTITUTO DE COMPUTAÇÃO
 
@@ -7,18 +7,18 @@
 
 
 
-# Trabalho de Implementação em Grupo
+#### Trabalho de Implementação em Grupo
 
-## Redes de Computadores I
+#### Redes de Computadores I
 
-### Prof. Diego Gimenez Passos
-
-
+#### Prof. Diego Gimenez Passos
 
 
-#### Rodrigo dos Santos Carvalho
 
-#### Winne Pereira Ignacio Domingues
+
+##### Rodrigo dos Santos Carvalho
+
+##### Winne Pereira Ignacio Domingues
 
 
 
