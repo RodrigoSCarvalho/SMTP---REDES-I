@@ -1,5 +1,18 @@
 # SMTP - REDES I
 
+# UNIVERSIDADE FEDERAL FLUMINENSE
+# INTITUTO DE COMPUTAÇÃO
+# BACHARELADO EM SISTEMAS DE INFORMAÇÃO
+
+# Trabalho de Implementação em Grupo
+# Redes de Computadores I
+# Prof. Diego Gimenez Passos
+
+Rodrigo dos Santos Carvalho
+Winne Pereira Ignacio Domingues
+
+
+
 A ideia do programa é simular um sistema de envio de e-mails SMTP.
 
 Para iniciar deve-se rodar primeiramente o Server.py de preferencia pelo cmd, passe por paramêtro um arquivo .txt contendo os endereços de e-mails dos usuários do servidor.
