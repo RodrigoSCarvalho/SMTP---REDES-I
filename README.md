@@ -26,3 +26,10 @@ Na nova etapa, o client receberá uma mensagem de confirmação do receptor e es
 Após o recebimento correto do comando DATA o servidor irá abrir o arquivo do receptor e enviará um comando de aguardo de mensagem. Com isso, o client poderá escrever as mensagens desejadas encerrando com um '.' único em um linha separada. 
 
 Recebendo esse '.' o servidor deverá informar que o e-mail foi entregue. O client terá a opção de enviar um comando 'QUIT', caso enviado será recebido uma mensagem de despedida entregue pelo servidor, e fechará a conexão. No servidor será aguardado uma nova conexão de client. Se não for enviado um 'QUIT' servidor e client continuarão conectados e o usuário poderá iniciar um novo processo de envio de e-mail SMTP.
+
+
+Tela do client após encerramento de conexão:
+![image](https://user-images.githubusercontent.com/72170590/113429163-74e9bd00-93ae-11eb-8b32-e87bcadff2fd.png)
+
+Tela do server após encerramento de conexão do client:
+![image](https://user-images.githubusercontent.com/72170590/113429276-a3679800-93ae-11eb-8b66-37664969a452.png)
