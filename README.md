@@ -36,4 +36,5 @@ Tela do client após encerramento de conexão:
 
 
 Tela do server após encerramento de conexão do client:
-![image](https://user-images.githubusercontent.com/72170590/113429276-a3679800-93ae-11eb-8b66-37664969a452.png)
+
+![image](https://user-images.githubusercontent.com/72170590/113429383-d27e0980-93ae-11eb-87a6-3e6dd3478fa3.png)
